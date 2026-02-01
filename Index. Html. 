@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chabra - Digital Products</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #000; /* Dark theme */
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00cfff; /* Sky-blue links */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00a1cc;
+        }
+
+        /* Header */
+        header {
+            background-color: #111;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00cfff;
+        }
+
+        header h1 {
+            color: #00cfff;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 50px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #00cfff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero a {
+            background-color: #00cfff;
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero a:hover {
+            background-color: #00a1cc;
+        }
+
+        /* Shop Section */
+        .shop {
+            padding: 80px 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .product {
+            background-color: #111;
+            border: 1px solid #00cfff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            margin-bottom: 10px;
+            color: #00cfff;
+        }
+
+        .product p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            background-color: #00cfff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #00a1cc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid #00cfff;
+        }
+
+        footer p {
+            color: #777;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .hero h2 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Chabra</h1>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Digital Products Made Easy</h2>
+        <p>Get high-quality digital products designed to boost your productivity.</p>
+        <a href="#shop">Shop Now</a>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?software" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>A high-quality digital product to improve your workflow.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?app" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Enhance your digital experience with this amazing tool.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?design" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Professional-grade product for creators and innovators.</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Chabra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
